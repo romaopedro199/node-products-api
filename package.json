@@ -1,22 +1,16 @@
 {
   "name": "products-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/romaopedro199/node-products-api.git"
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/romaopedro199/node-products-api/issues"
-  },
-  "homepage": "https://github.com/romaopedro199/node-products-api#readme",
-  "description": "",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.7",
@@ -29,6 +23,8 @@
     "@types/express": "^5.0.0",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.13.10",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
     "typescript": "^5.8.2"
   }
 }
