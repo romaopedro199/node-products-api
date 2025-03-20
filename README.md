@@ -18,7 +18,6 @@ Esta é uma API RESTful simples para gerenciamento de produtos, desenvolvida com
 - jsonwebtoken
 - bcryptjs
 - dotenv
-- Postman (para testes)
 
 ## Pré-requisitos
 
