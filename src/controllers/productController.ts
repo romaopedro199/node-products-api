@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import productModel from "../models/productModel";
-import { Product } from "../types/product";
 
 async function getAllProducts(req: Request, res: Response): Promise<void> {
   const page = parseInt(req.query.page as string) || 1;
